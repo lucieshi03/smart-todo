@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart To-Do List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="header">
+        <h1>────୨ৎ────</h1>
+    </div>
+
+    <section class="todo">
+        <div class="container">
+            <h2>To-Do List</h2>
+            <div class="input-container">
+                <input type="text" id="task-input" placeholder="Add a new task">
+                <button id="add-task">Add Task</button>
+            </div>
+            <ul id="task-list"></ul>
+        </div>
+    </section>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
